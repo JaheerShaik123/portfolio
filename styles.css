@@ -1,0 +1,370 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header Section */
+header {
+  background-color: #1d3557;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f1faee;
+  transform: translateY(-3px);
+}
+
+/* About Section */
+section#about {
+  padding: 80px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+section#about h2 {
+  font-size: 2.5rem;
+  color: #1d3557;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+section#about p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.7;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Skills Section */
+section#skills {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+section#skills h2 {
+  font-size: 2.5rem;
+  color: #1d3557;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+section#skills ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+section#skills ul li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+section#skills ul li:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+section#skills ul li strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1d3557;
+}
+
+/* Projects Section */
+section#projects {
+  padding: 80px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+section#projects h2 {
+  font-size: 2.5rem;
+  color: #1d3557;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.project {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.project h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1d3557;
+  margin: 20px;
+}
+
+.project p {
+  font-size: 1.1rem;
+  color: #777;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.project:hover {
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.project p strong {
+  font-weight: bold;
+}
+/* Resume Section */
+section#resume {
+  background-color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+section#resume h2 {
+  font-size: 2.5rem;
+  color: #1d3557;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+section#resume p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+section#resume a {
+  color: #3498db;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+section#resume a:hover {
+  background-color: #3498db;
+  color: #fff;
+  border-color: #3498db;
+  transform: translateY(-3px);
+}
+
+/* Responsive Styles for Resume Section */
+@media (max-width: 768px) {
+  section#resume h2 {
+    font-size: 2rem;
+  }
+
+  section#resume p {
+    font-size: 1rem;
+  }
+
+  section#resume a {
+    font-size: 1rem;
+    padding: 8px 18px;
+  }
+}
+
+
+/* Contact Section */
+section#contact {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  text-align: center;
+}
+
+section#contact h2 {
+  font-size: 2.5rem;
+  color: #1d3557;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+section#contact p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+section#contact a {
+  color: #3498db;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+section#contact a:hover {
+  color: #2980b9;
+}
+
+/* Footer Section */
+footer {
+  background-color: #1d3557;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+}
+/* Research Section */
+section#research {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  text-align: center;
+}
+
+section#research h2 {
+  font-size: 2.5rem;
+  color: #1d3557;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+section#research p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+section#research ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+  max-width: 600px;
+}
+
+section#research ul li {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+section#research ul li strong {
+  font-weight: bold;
+  color: #1d3557;
+}
+
+/* Responsive Styles for Research Section */
+@media (max-width: 768px) {
+  section#research h2 {
+    font-size: 2rem;
+  }
+
+  section#research p {
+    font-size: 1rem;
+  }
+
+  section#research ul {
+    max-width: 90%;
+  }
+
+  section#research ul li {
+    font-size: 1rem;
+  }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  header h1 {
+      font-size: 2.2rem;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  section#about p {
+      width: 80%;
+      font-size: 1rem;
+  }
+
+  section#skills ul {
+      flex-direction: column;
+  }
+
+  section#projects .project {
+      margin: 20px 0;
+  }
+
+  section#contact p {
+      font-size: 1rem;
+  }
+}
